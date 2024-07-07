@@ -1,0 +1,19 @@
+.not_found {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bold {
+  font-weight: var(--font-bold);
+  margin: var(--margin) 0;
+}
+.notice {
+  color: var(--color-mute);
+}
+
+.btn_wrapper {
+  margin-top: calc(var(--margin) * 4);
+}
