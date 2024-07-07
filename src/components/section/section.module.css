@@ -1,0 +1,7 @@
+.section {
+  margin-top: calc(var(--margin) * 3);
+}
+
+.section_title {
+  margin-bottom: var(--margin);
+}

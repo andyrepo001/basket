@@ -1,0 +1,9 @@
+.sidebar_trigger {
+  margin-bottom: var(--margin);
+}
+
+@media (min-width: 1024px) {
+  .sidebar_trigger {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+.footer {
+  background-color: var(--font-color);
+  color: var(--background);
+}
+
+.about_text {
+  line-height: 1.5;
+}
+
+.footer_links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: calc(var(--gap) * 2);
+}
+
+.connect {
+  margin-top: calc(var(--margin) * 2);
+  display: grid;
+  gap: calc(var(--gap) * 2);
+}
+
+.socials {
+  display: flex;
+  gap: calc(var(--gap) * 2);
+}
+
+@media (min-width: 768px) {
+  .connect {
+    grid-template-columns: 1fr 1fr;
+  }
+}

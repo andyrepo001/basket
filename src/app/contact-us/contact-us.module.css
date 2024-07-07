@@ -1,0 +1,17 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
+.cards {
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(var(--gap) * 4) var(--gap);
+}
+
+.form {
+  display: grid;
+  gap: calc(var(--gap) * 2);
+}

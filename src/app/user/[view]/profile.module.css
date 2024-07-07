@@ -1,0 +1,12 @@
+.content {
+  background-color: var(--color-accent);
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+@media (min-width: 1024px) {
+  .profile_wrapper {
+    display: flex;
+    gap: calc(var(--gap) * 2);
+  }
+}

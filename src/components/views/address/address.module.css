@@ -1,0 +1,13 @@
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: calc(var(--margin) * 2);
+}
+
+.addresses {
+  margin-top: calc(var(--margin) * 2);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: calc(var(--gap) * 2);
+}

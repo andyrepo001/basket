@@ -1,0 +1,29 @@
+.wrapper {
+  background-color: var(--color-accent);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.dropdown_header {
+  font-size: var(--font-xl);
+  font-weight: var(--font-bold);
+  transition: color var(--transition);
+  user-select: none;
+  cursor: pointer;
+}
+
+.header_items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all var(--transition);
+  line-height: 1.8;
+}
+
+.content.open {
+  max-height: 500px;
+}

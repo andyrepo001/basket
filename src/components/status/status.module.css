@@ -1,0 +1,9 @@
+.status {
+  width: fit-content;
+  height: fit-content;
+  padding: calc(var(--padding) * 0.5);
+  border-radius: var(--radius);
+  color: var(--background);
+  text-transform: capitalize;
+  font-size: var(--font-sm);
+}

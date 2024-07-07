@@ -1,0 +1,30 @@
+.wrapper {
+  display: grid;
+  gap: calc(var(--gap) * 4);
+}
+
+.header_wrapper {
+  height: fit-content;
+}
+
+.contact {
+  color: var(--theme-color);
+  text-decoration: underline;
+}
+
+.dropdown_items {
+  display: grid;
+  gap: calc(var(--gap) * 2);
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    grid-template-columns: 1.2fr 2fr;
+    gap: var(--gap);
+  }
+
+  .header_wrapper {
+    position: sticky;
+    top: 0;
+  }
+}

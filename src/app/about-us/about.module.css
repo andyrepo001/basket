@@ -1,0 +1,124 @@
+.philosophy_card {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--color-accent);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.philosophy_image_wrapper {
+  position: relative;
+  min-height: 350px;
+}
+
+.philosophy_image {
+  object-fit: cover;
+}
+
+.philosophy_text {
+  padding: calc(var(--padding) * 2) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.about_text {
+  line-height: 1.8;
+}
+
+/* Features */
+
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature_cards {
+  margin-top: calc(var(--margin) * 2);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: calc(var(--gap) * 2);
+}
+
+.button_wrapper {
+  margin-top: calc(var(--margin) * 2);
+}
+
+/* CTA card */
+.cta {
+  border-radius: var(--radius);
+  display: grid;
+  overflow: hidden;
+}
+
+.cta_card_wrapper {
+  background-color: var(--color-accent);
+  padding: calc(var(--padding) * 2);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta_card {
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--gap) * 2);
+  background-color: var(--background);
+  border-radius: var(--radius);
+}
+
+.cta_image_wrapper {
+  position: relative;
+  height: 100%;
+  display: none;
+}
+
+.cta_image {
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .cta_card {
+    padding: calc(var(--padding) * 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .philosophy_card {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .philosophy_text {
+    padding: calc(var(--padding) * 2);
+  }
+
+  .features {
+    width: 650px;
+  }
+
+  .cta {
+    height: 500px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cta_card_wrapper {
+    padding: calc(var(--padding) * 4);
+  }
+
+  .cta_card {
+    padding: calc(var(--padding) * 4);
+  }
+
+  .cta_image_wrapper {
+    display: block;
+  }
+}

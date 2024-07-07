@@ -1,0 +1,14 @@
+.sidebar_item {
+  border-radius: var(--radius);
+  transition: background-color var(--transition);
+}
+
+.sidebar_item:hover {
+  background-color: var(--theme-variant);
+}
+
+.sidebar_item.active {
+  background-color: var(--theme-variant);
+  color: var(--theme-color);
+  border-left: 3px solid var(--theme-color);
+}

@@ -1,0 +1,28 @@
+.address_card {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: box-shadow var(--transition);
+  /* font-style: normal; */
+}
+
+.address_card:hover {
+  box-shadow: var(--shadow-active);
+}
+
+.username {
+  font-size: var(--font-lg);
+  font-weight: var(--font-bold);
+}
+
+.address {
+  margin: calc(var(--margin) * 1.5) 0;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gap) * 2);
+}
+
+.btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}

@@ -1,0 +1,99 @@
+.button {
+  justify-content: center;
+  font-weight: 700;
+}
+
+.primary {
+  background-color: var(--theme-variant);
+  color: var(--theme-color);
+}
+
+.primary:hover,
+.primary:focus {
+  background-color: var(--theme-color);
+  color: var(--theme-variant);
+}
+
+.ghost {
+  background-color: transparent;
+  box-shadow: var(--shadow);
+}
+
+.ghost:hover {
+  border-color: var(--theme-variant);
+  color: var(--theme-color);
+}
+
+.rounded {
+  padding: calc(var(--padding) * 0.8);
+  border-radius: 50%;
+}
+
+.square {
+  border-radius: 0;
+}
+
+.outline {
+  background-color: var(--background);
+  border: 1px solid var(--theme-color) !important;
+  color: var(--theme-color);
+}
+
+.outline:hover,
+.outline:focus {
+  background-color: var(--theme-color);
+  color: var(--background);
+}
+
+.secondary {
+  background-color: var(--theme-color);
+  color: var(--background);
+}
+
+.secondary:hover,
+.secondary:focus {
+  background-color: var(--theme-variant);
+  color: var(--theme-color);
+}
+
+.secondary:active {
+  background-color: var(--theme-color) !important;
+  color: var(--background) !important;
+}
+
+.destructive {
+  background-color: transparent;
+  color: var(--destructive);
+}
+
+.destructive:hover {
+  background-color: var(--destructive);
+  color: var(--background);
+}
+
+.close {
+  background-color: transparent;
+  color: var(--font-color);
+}
+
+.close:hover {
+  background-color: var(--font-color);
+  color: var(--background);
+}
+
+.no_border {
+  border: none;
+  box-shadow: none;
+}
+
+.no_border:hover {
+  color: inherit;
+  border: none;
+}
+
+.secondary:hover,
+.secondary:focus,
+.primary:hover,
+.primary:focus {
+  box-shadow: var(--shadow-active);
+}

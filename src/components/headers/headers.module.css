@@ -1,0 +1,26 @@
+.primary_header {
+  font-size: var(--font-xl);
+  font-weight: var(--font-bold);
+  text-transform: capitalize;
+  margin-bottom: 0.3rem;
+}
+
+.header_text {
+  font-size: var(--font);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.large {
+  font-size: calc(var(--font-xl) * 1.4);
+}
+
+.light {
+  font-weight: var(--font-light);
+}
+
+@media (min-width: 1200px) {
+  .large {
+    font-size: calc(var(--font-xl) * 2);
+  }
+}

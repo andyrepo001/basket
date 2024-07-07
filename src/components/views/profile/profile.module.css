@@ -1,0 +1,56 @@
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: calc(var(--margin) * 2);
+}
+
+.username {
+  font-size: var(--font-xl);
+  text-transform: capitalize;
+  font-weight: var(--font-bold);
+}
+
+.info_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap) calc(var(--gap) * 2);
+}
+
+.info_group {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.personal_info {
+  margin-top: calc(var(--margin) * 2);
+}
+
+.total_info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--gap);
+}
+
+.column {
+  padding: var(--padding) 0;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gap) * 4) 0;
+}
+
+@media (min-width: 768px) {
+  .header_wrapper {
+    margin-bottom: calc(var(--margin) * 0.5);
+  }
+
+  .info_wrapper {
+    gap: calc(var(--gap) * 6);
+  }
+
+  .personal_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

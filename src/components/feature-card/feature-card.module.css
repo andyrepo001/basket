@@ -1,0 +1,17 @@
+.feature {
+  background-color: var(--color-accent);
+  border-radius: var(--radius);
+}
+
+.image_wrapper {
+  position: relative;
+  height: 100px;
+}
+
+.image {
+  object-fit: contain;
+}
+
+.details {
+  text-align: center;
+}

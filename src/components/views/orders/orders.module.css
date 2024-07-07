@@ -1,0 +1,4 @@
+.order_cards {
+  display: grid;
+  gap: calc(var(--gap) * 2);
+}

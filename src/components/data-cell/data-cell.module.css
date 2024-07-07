@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.data_key,
+.data_value {
+  display: block;
+  text-transform: capitalize;
+}
+
+.data_key {
+  margin-bottom: calc(var(--margin) * 0.5);
+  opacity: 0.7;
+}

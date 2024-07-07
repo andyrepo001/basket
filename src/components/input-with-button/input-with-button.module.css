@@ -1,0 +1,9 @@
+.input_button {
+  padding: 0.1rem;
+  /* border: 1px solid var(--theme-color); */
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: calc(var(--gap) * 0.3);
+  overflow: hidden;
+}
