@@ -27,7 +27,7 @@ export default function Profile() {
           </div>
           <div className={styles.info_group}>
             <Icon icon={BadgeCheck} size={20} />
-            <span className={styles.info_text}>Member since 28 july, 2023</span>
+            <span className={styles.info_text}>Member since 28 July, 2023</span>
           </div>
         </div>
 

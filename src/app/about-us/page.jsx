@@ -53,7 +53,6 @@ export default function Page() {
                 <Headers
                   primaryHeader="our philosophy"
                   customStyles={{ marginBottom: "1rem" }}
-                  large
                 />
                 <p className={styles.about_text}>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -86,7 +85,10 @@ export default function Page() {
         >
           <Container>
             <div className={styles.features}>
-              <Headers large primaryHeader="why you'll love us" />
+              <Headers
+                primaryHeader="why you'll love us"
+                customStyles={{ marginBottom: "1rem" }}
+              />
               <p className={styles.about_text}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Tenetur, optio, iusto magni fuga officia nam doloremque quidem
@@ -112,7 +114,6 @@ export default function Page() {
               <div className={styles.cta_card}>
                 <Headers
                   primaryHeader="visit the shop"
-                  large
                   customStyles={{ textAlign: "center" }}
                 />
                 <p

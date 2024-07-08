@@ -16,7 +16,7 @@ import FooterLinkGroup from "./footer-link-group/footer-link-group";
 export default function Footer() {
   const footerLinks = [
     {
-      label: "TOP CATEGORIES",
+      label: "Top categories",
       links: [
         {
           href: "",
@@ -37,7 +37,7 @@ export default function Footer() {
       ],
     },
     {
-      label: "USEFUL LINKS",
+      label: "Userful Links",
       links: [
         {
           href: "/user/profile",
@@ -58,7 +58,7 @@ export default function Footer() {
       ],
     },
     {
-      label: "FEEDBACK",
+      label: "feedback",
       links: [
         {
           href: "/contact-us",
@@ -75,7 +75,7 @@ export default function Footer() {
           <div className={styles.footer_links}>
             {/* Group */}
             <div>
-              <Headers primaryHeader="ABOUT US" />
+              <Headers primaryHeader="about us" />
               <p className={styles.about_text}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
                 incidunt laborum aliquid aliquam ea, vero quidem sequi

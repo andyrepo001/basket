@@ -4,7 +4,7 @@
 }
 
 .about_text {
-  line-height: 1.5;
+  line-height: var(--line-height);
 }
 
 .footer_links {

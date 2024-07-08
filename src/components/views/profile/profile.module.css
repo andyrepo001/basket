@@ -6,7 +6,7 @@
 }
 
 .username {
-  font-size: var(--font-xl);
+  font-size: var(--font-lg);
   text-transform: capitalize;
   font-weight: var(--font-bold);
 }

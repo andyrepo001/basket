@@ -15,10 +15,11 @@
   --padding: 0.8rem;
   --margin: 0.7rem;
 
-  --font-xl: 1.3rem;
-  --font-lg: 1rem;
+  --font-xl: calc(22px + 6 * (100vw - 320px) / 1600);
+  --font-lg: calc(22px + 6 * (100vw - 2800px) / 1600);
   --font: 0.875rem;
   --font-sm: 0.775rem;
+  --line-height: 1.8;
 
   --font-light: 400;
   --font-bold: 500;

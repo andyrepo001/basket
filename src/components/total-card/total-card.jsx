@@ -10,7 +10,7 @@ export default function TotalCard() {
         <div className={styles.total_card}>
           <Icon icon={PackageOpen} size={64} />
           <div className={styles.info}>
-            <span>total order</span>
+            <span className={styles.title}>total order</span>
             <span className={styles.quantity}>3658</span>
           </div>
         </div>

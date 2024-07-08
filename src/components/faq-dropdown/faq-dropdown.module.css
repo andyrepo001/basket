@@ -5,8 +5,6 @@
 }
 
 .dropdown_header {
-  font-size: var(--font-xl);
-  font-weight: var(--font-bold);
   transition: color var(--transition);
   user-select: none;
   cursor: pointer;
@@ -21,7 +19,7 @@
   max-height: 0;
   overflow: hidden;
   transition: all var(--transition);
-  line-height: 1.8;
+  line-height: var(--line-height);
 }
 
 .content.open {

@@ -1,0 +1,19 @@
+.order_details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+}
+
+.items {
+  border-radius: var(--radius);
+  background-color: var(--color-accent);
+  display: grid;
+  gap: var(--gap);
+  overflow: auto;
+}
+
+@media (min-width: 1024px) {
+  .order_details {
+    grid-template-columns: 3fr 1fr;
+  }
+}

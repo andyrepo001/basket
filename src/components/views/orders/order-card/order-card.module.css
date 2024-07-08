@@ -8,6 +8,11 @@
   box-shadow: var(--shadow-active);
 }
 
+.title {
+  font-size: var(--font-lg);
+  font-weight: var(--font-bold);
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr;

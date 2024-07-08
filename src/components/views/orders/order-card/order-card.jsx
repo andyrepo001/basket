@@ -16,7 +16,10 @@ export default function OrderCard() {
           </figure>
           <section className={styles.details}>
             <div className={styles.header_wrapper}>
-              <Headers primaryHeader="Fantasy Crunchy Choco Chip Cookies" />
+              {/* <Headers primaryHeader="Fantasy Crunchy Choco Chip Cookies" /> */}
+              <h2 className={styles.title}>
+                Fantasy Crunchy Choco Chip Cookies
+              </h2>
               <Status status="pending" />
             </div>
             <p className={styles.desc}>

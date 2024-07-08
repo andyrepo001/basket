@@ -16,6 +16,10 @@
   text-transform: capitalize;
 }
 
+.title {
+  font-size: var(--font-lg);
+}
+
 .quantity {
   font-weight: var(--font-bold);
   font-size: var(--font-xl);

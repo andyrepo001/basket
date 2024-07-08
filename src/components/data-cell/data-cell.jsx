@@ -7,15 +7,20 @@ export default function DataCell({
   link = false,
   href,
   icon,
+  large,
 }) {
   return (
     <div className={styles.wrapper}>
       {icon && <Icon icon={icon} size={28} />}
       <div>
         <span className={styles.data_key}>{dataName}</span>
-        {!link && <span className={styles.data_value}>{dataValue}</span>}
+        {!link && (
+          <span className={`${styles.data_value} ${large ? styles.large : ""}`}>
+            {dataValue}
+          </span>
+        )}
         {link && (
-          <a href={href} className={styles.data_value}>
+          <a href={href} className={`${styles.data_value} ${styles.data_link}`}>
             {dataValue}
           </a>
         )}

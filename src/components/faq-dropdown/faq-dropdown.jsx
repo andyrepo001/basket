@@ -4,6 +4,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 import Container from "../container/container";
 import Icon from "../icon/icon";
+import Headers from "../headers/headers";
 
 export default function FaqDropodown({ faq }) {
   const [isOpen, setIsOpen] = useState(true);
@@ -16,7 +17,7 @@ export default function FaqDropodown({ faq }) {
       >
         <Container>
           <div className={styles.header_items}>
-            <p>{faq?.question}</p>
+            <Headers primaryHeader={faq?.question} capitalize={false} />
             <Icon icon={!isOpen ? ChevronDown : ChevronUp} size={24} />
           </div>
         </Container>

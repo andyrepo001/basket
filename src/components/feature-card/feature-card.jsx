@@ -2,7 +2,6 @@ import styles from "./feature-card.module.css";
 import Image from "next/image";
 import Container from "../container/container";
 import Headers from "../headers/headers";
-import f1 from "@/assets/f1.png";
 
 export default function FeatureCard({ feature }) {
   return (
@@ -18,8 +17,11 @@ export default function FeatureCard({ feature }) {
         </figure>
         <Headers
           primaryHeader={feature?.label}
-          light
-          customStyles={{ textAlign: "center", margin: "1rem 0" }}
+          customStyles={{
+            textAlign: "center",
+            margin: "1rem 0",
+            fontSize: "1rem",
+          }}
         />
         <p className={styles.details}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vitae
