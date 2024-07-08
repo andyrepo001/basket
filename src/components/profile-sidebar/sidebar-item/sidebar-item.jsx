@@ -24,6 +24,7 @@ export default function SidebarItem({ item, pathname }) {
             justifyContent: "flex-start",
             color: "inherit",
             fontSize: "var(--font-lg)",
+            border: "none",
           }}
           onClick={onClose}
         />
