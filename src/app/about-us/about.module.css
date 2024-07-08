@@ -70,7 +70,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: calc(var(--gap) * 2);
   background-color: var(--background);
   border-radius: var(--radius);
 }

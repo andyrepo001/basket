@@ -114,11 +114,11 @@ export default function Page() {
               <div className={styles.cta_card}>
                 <Headers
                   primaryHeader="visit the shop"
-                  customStyles={{ textAlign: "center" }}
+                  customStyles={{ textAlign: "center", marginBottom: "1rem" }}
                 />
                 <p
                   className={styles.about_text}
-                  style={{ textAlign: "center" }}
+                  style={{ textAlign: "center", marginBottom: "var(--margin)" }}
                 >
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem,
                   quidem! Fugiat itaque natus quos obcaecati? Ut porro quos
