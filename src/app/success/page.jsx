@@ -5,6 +5,7 @@ import success from "@/assets/success.png";
 import Headers from "@/components/headers/headers";
 import OrderDetails from "@/components/order-details/order-details";
 import Section from "@/components/section/section";
+import Text from "@/components/text/text";
 
 export default function OrderSuccessPage() {
   return (
@@ -22,10 +23,8 @@ export default function OrderSuccessPage() {
           </figure>
 
           <Headers primaryHeader="order placed successfully." />
-          <span className={styles.text}>
-            your order is success and your order is on the way.
-          </span>
-          <span className={styles.text}>Order ID: 1243893465929563</span>
+          <Text>Your order is success and your order is on the way.</Text>
+          <Text>Order ID: 1243893465929563</Text>
         </div>
       </Section>
       <Section>

@@ -5,6 +5,7 @@ import product from "@/assets/product.png";
 import Headers from "@/components/headers/headers";
 import Status from "@/components/status/status";
 import Container from "@/components/container/container";
+import Text from "@/components/text/text";
 
 export default function OrderCard() {
   return (
@@ -22,10 +23,10 @@ export default function OrderCard() {
               </h2>
               <Status status="pending" />
             </div>
-            <p className={styles.desc}>
+            <Text style={{ marginTop: "var(--margin)" }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
               nobis sunt illo voluptate facere quod fuga facilis sed aut alias.
-            </p>
+            </Text>
             <div className={styles.additional_info}>
               <div className={styles.column}>
                 <DataCell dataName="price" dataValue="$18.99" />

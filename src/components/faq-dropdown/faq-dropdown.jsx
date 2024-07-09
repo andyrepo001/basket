@@ -5,9 +5,11 @@ import { useState } from "react";
 import Container from "../container/container";
 import Icon from "../icon/icon";
 import Headers from "../headers/headers";
+import Text from "../text/text";
 
 export default function FaqDropodown({ faq }) {
   const [isOpen, setIsOpen] = useState(true);
+
   return (
     <div className={styles.wrapper}>
       <div
@@ -25,7 +27,7 @@ export default function FaqDropodown({ faq }) {
 
       <div className={`${styles.content} ${isOpen ? styles.open : ""}`}>
         <Container>
-          <p>{faq?.answer}</p>
+          <Text>{faq?.answer}</Text>
         </Container>
       </div>
     </div>

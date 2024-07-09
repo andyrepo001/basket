@@ -4,10 +4,6 @@
   transition: color var(--transition), text-decoration 2s ease;
 }
 
-.link:nth-of-type(1) {
-  margin-top: 0;
-}
-
 .link:hover {
   color: var(--theme-color);
   text-decoration: underline;

@@ -1,5 +1,6 @@
 import styles from "./order-details.module.css";
 import OrderItem from "./order-item/order-item";
+import OrderTotal from "./order-total/order-total";
 
 export default function OrderDetails() {
   return (
@@ -12,7 +13,9 @@ export default function OrderDetails() {
         <OrderItem />
         <OrderItem />
       </div>
-      <div className={styles.details}></div>
+      <div className={styles.details}>
+        <OrderTotal />
+      </div>
     </div>
   );
 }

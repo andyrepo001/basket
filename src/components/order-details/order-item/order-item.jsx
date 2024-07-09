@@ -15,9 +15,12 @@ export default function OrderItem() {
           <DataCell dataName="weight" dataValue="500g" large />
         </div>
       </div>
-      <DataCell dataName="price" dataValue="$19.99" large />
-      <DataCell dataName="quantity" dataValue="5" large />
-      <DataCell dataName="total" dataValue="$99.00" large />
+      <div className={styles.item_info}>
+        <DataCell dataName="price" dataValue="$19.99" large />
+        <DataCell dataName="quantity" dataValue="5" large />
+        <DataCell dataName="total" dataValue="$99.00" large />
+        <DataCell dataName="brand" dataValue="apex" large />
+      </div>
     </div>
   );
 }

@@ -10,7 +10,7 @@
   box-shadow: var(--shadow);
   overflow: hidden;
   transition: all var(--transition);
-  z-index: 5;
+  z-index: 3;
 }
 
 .profile_sidebar.visible {
@@ -65,12 +65,6 @@
   text-align: center;
   border-bottom: 1px solid var(--color-shade);
   padding: var(--padding) 0;
-}
-
-.username {
-  font-size: var(--font-xl);
-  text-transform: capitalize;
-  font-weight: var(--font-light);
 }
 
 .email {

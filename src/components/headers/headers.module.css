@@ -1,7 +1,6 @@
 .primary_header {
   font-size: var(--font-xl);
   font-weight: var(--font-bold);
-  margin-bottom: 0.3rem;
 }
 
 .primary_header.capitalize {
@@ -16,4 +15,10 @@
 
 .light {
   font-weight: var(--font-light);
+}
+
+.secondaryHeader {
+  font-size: var(--font-lg);
+  text-transform: capitalize;
+  font-weight: var(--font-bold);
 }

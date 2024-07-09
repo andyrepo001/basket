@@ -14,6 +14,7 @@ import f4 from "@/assets/f4.png";
 import ab2 from "@/assets/ab2.webp";
 import { ArrowRight } from "lucide-react";
 import Container from "@/components/container/container";
+import Text from "@/components/text/text";
 
 const features = [
   {
@@ -54,7 +55,7 @@ export default function Page() {
                   primaryHeader="our philosophy"
                   customStyles={{ marginBottom: "1rem" }}
                 />
-                <p className={styles.about_text}>
+                <Text>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Natus, saepe consequatur? Mollitia beatae perspiciatis
                   accusantium deserunt nihil facere quia laboriosam architecto
@@ -69,7 +70,7 @@ export default function Page() {
                   velit suscipit illum repudiandae. Lorem ipsum dolor sit amet
                   consectetur adipisicing elit. Nemo quos sunt laudantium fugit
                   assumenda similique atque exercitationem.
-                </p>
+                </Text>
               </Container>
             </div>
           </div>
@@ -89,7 +90,7 @@ export default function Page() {
                 primaryHeader="why you'll love us"
                 customStyles={{ marginBottom: "1rem" }}
               />
-              <p className={styles.about_text}>
+              <Text>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Tenetur, optio, iusto magni fuga officia nam doloremque quidem
                 odio saepe voluptatibus hic aliquam. Natus vel ab, nesciunt
@@ -97,7 +98,7 @@ export default function Page() {
                 similique aliquam cumque nisi maiores? Ut sit iste voluptatibus
                 quos aliquid aperiam nesciunt vitae commodi facere sint
                 laboriosam molestiae rem maxime nemo eum ad quasi.
-              </p>
+              </Text>
             </div>
           </Container>
           <div className={styles.feature_cards}>
@@ -116,15 +117,14 @@ export default function Page() {
                   primaryHeader="visit the shop"
                   customStyles={{ textAlign: "center", marginBottom: "1rem" }}
                 />
-                <p
-                  className={styles.about_text}
+                <Text
                   style={{ textAlign: "center", marginBottom: "var(--margin)" }}
                 >
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem,
                   quidem! Fugiat itaque natus quos obcaecati? Ut porro quos
                   facere est reiciendis! Sed minus perspiciatis voluptatibus eos
                   facere saepe sequi repellat.
-                </p>
+                </Text>
                 <Button
                   label="here we go"
                   variant="secondary"

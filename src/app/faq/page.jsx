@@ -2,6 +2,7 @@ import styles from "./faq.module.css";
 import FaqDropodown from "@/components/faq-dropdown/faq-dropdown";
 import Headers from "@/components/headers/headers";
 import PageWrapper from "@/components/page-wrapper/page-wrapper";
+import Text from "@/components/text/text";
 import Link from "next/link";
 
 const faqs = [
@@ -47,13 +48,13 @@ export default function FAQPage() {
             large
             customStyles={{ marginBottom: "var(--margin)" }}
           />
-          <span>
+          <Text>
             Got a question? We got you covered! These are the questions our
             customers asked us the most. If you have further questions, please{" "}
             <Link href="/contact-us" className={styles.contact}>
               contact our support here.
             </Link>
-          </span>
+          </Text>
         </div>
         <div className={styles.dropdown_items}>
           {faqs?.map((faq, index) => (

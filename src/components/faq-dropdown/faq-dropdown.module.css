@@ -13,6 +13,7 @@
 .header_items {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .content {

@@ -12,6 +12,7 @@ import styles from "./footer.module.css";
 import Icon from "../icon/icon";
 import Link from "next/link";
 import FooterLinkGroup from "./footer-link-group/footer-link-group";
+import Text from "../text/text";
 
 export default function Footer() {
   const footerLinks = [
@@ -75,14 +76,17 @@ export default function Footer() {
           <div className={styles.footer_links}>
             {/* Group */}
             <div>
-              <Headers primaryHeader="about us" />
-              <p className={styles.about_text}>
+              <Headers
+                primaryHeader="about us"
+                customStyles={{ marginBottom: "var(--margin)" }}
+              />
+              <Text style={{ lineHeight: "1.3" }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
                 incidunt laborum aliquid aliquam ea, vero quidem sequi
                 assumenda? Officiis incidunt provident et dolorum repellat vero
                 laudantium exercitationem dignissimos, qui magnam, sint atque ex
                 velit voluptatum recusandae id tenetur. Mollitia, sed?
-              </p>
+              </Text>
             </div>
 
             {footerLinks?.map((link, index) => (

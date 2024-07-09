@@ -2,7 +2,7 @@ import styles from "./headers.module.css";
 
 export default function Headers({
   primaryHeader,
-  headerText,
+  secondaryHeader,
   customStyles = {},
   light,
   capitalize = true,
@@ -18,7 +18,9 @@ export default function Headers({
           {primaryHeader}
         </h2>
       )}
-      {headerText && <span className={styles.header_text}>{headerText}</span>}
+      {secondaryHeader && (
+        <h4 className={styles.secondaryHeader}>{secondaryHeader}</h4>
+      )}
     </hgroup>
   );
 }

@@ -9,6 +9,7 @@ import profile from "@/assets/1.jpg";
 import Container from "../container/container";
 import SidebarItem from "./sidebar-item/sidebar-item";
 import Button from "../button/button";
+import Headers from "../headers/headers";
 
 const sidebarItems = [
   {
@@ -65,7 +66,7 @@ export default function ProfileSidebar() {
         </figure>
 
         <div className={styles.user_info}>
-          <h6 className={styles.username}>Jane doe</h6>
+          <Headers primaryHeader="jane doe" />
           <p className={styles.email}>jane@email.com</p>
         </div>
 

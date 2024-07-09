@@ -22,10 +22,6 @@
   justify-content: center;
 }
 
-.about_text {
-  line-height: var(--line-height);
-}
-
 /* Features */
 
 .features {

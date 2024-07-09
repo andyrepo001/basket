@@ -8,6 +8,7 @@ import Profile from "@/components/views/profile/profile";
 import Wishlist from "@/components/views/wishlist/wishlist";
 import ProfileSiebarTrigger from "@/components/profile-sidebar/profile-sidebar-trigger/profile-sidebar-trigger";
 import Container from "@/components/container/container";
+import NotFound from "@/app/not-found";
 
 export default function ProfilePage({ params }) {
   const views = {
@@ -19,7 +20,7 @@ export default function ProfilePage({ params }) {
 
   const CurrentView = views[params?.view];
 
-  if (!CurrentView) return null;
+  if (!CurrentView) return <NotFound />;
 
   return (
     <PageWrapper>

@@ -34,10 +34,6 @@
   justify-content: space-between;
 }
 
-.desc {
-  margin-top: var(--margin);
-}
-
 .additional_info {
   margin-top: var(--margin);
   display: grid;

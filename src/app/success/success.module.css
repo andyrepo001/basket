@@ -1,4 +1,5 @@
 .success_notice {
+  padding: calc(var(--padding) * 2) 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,16 +8,12 @@
 }
 
 .success_image_wrapper {
-  margin-bottom: calc(var(--margin) * 2);
-  height: 100px;
-  width: 100px;
+  margin-bottom: var(--margin);
+  height: 150px;
+  width: 150px;
   position: relative;
 }
 
 .success_image {
   object-fit: contain;
-}
-
-.text {
-  text-transform: capitalize;
 }

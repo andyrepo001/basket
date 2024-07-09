@@ -3,10 +3,6 @@
   color: var(--background);
 }
 
-.about_text {
-  line-height: var(--line-height);
-}
-
 .footer_links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
