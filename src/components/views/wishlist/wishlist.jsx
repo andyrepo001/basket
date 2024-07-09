@@ -1,6 +1,5 @@
-import UserDashboardWrapper from "@/components/user-dashboard-wrapper/user-dashboard-wrapper";
 import styles from "./wishlist.module.css";
-import Section from "@/components/section/section";
+import UserDashboardWrapper from "@/components/user-dashboard-wrapper/user-dashboard-wrapper";
 
 export default function Wishlist() {
   return (

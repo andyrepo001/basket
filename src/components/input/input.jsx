@@ -1,5 +1,5 @@
-import { rubik } from "@/lib/fonts";
 import styles from "./input.module.css";
+import { rubik } from "@/lib/fonts";
 
 export default function Input({
   ariaLabel,

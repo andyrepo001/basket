@@ -1,6 +1,6 @@
-import Headers from "@/components/headers/headers";
 import styles from "./footer-link-group.module.css";
 import Link from "next/link";
+import Headers from "@/components/headers/headers";
 
 export default function FooterLinkGroup({ link }) {
   return (

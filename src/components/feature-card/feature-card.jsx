@@ -2,6 +2,7 @@ import styles from "./feature-card.module.css";
 import Image from "next/image";
 import Container from "../container/container";
 import Headers from "../headers/headers";
+import Text from "../text/text";
 
 export default function FeatureCard({ feature }) {
   return (
@@ -23,10 +24,10 @@ export default function FeatureCard({ feature }) {
             fontSize: "1rem",
           }}
         />
-        <p className={styles.details}>
+        <Text style={{ textAlign: "center" }}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vitae
           iure vero atque laborum neque.
-        </p>
+        </Text>
       </Container>
     </div>
   );

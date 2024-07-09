@@ -1,6 +1,6 @@
-import Headers from "@/components/headers/headers";
-import Modal from "../modal";
 import styles from "./remove-address-modal.module.css";
+import Modal from "../modal";
+import Headers from "@/components/headers/headers";
 import Button from "@/components/button/button";
 
 export default function RemoveAddressModal({ isOpen, onClose }) {

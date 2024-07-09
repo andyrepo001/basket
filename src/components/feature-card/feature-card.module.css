@@ -11,8 +11,3 @@
 .image {
   object-fit: contain;
 }
-
-.details {
-  text-align: center;
-  line-height: var(--line-height);
-}

@@ -1,6 +1,6 @@
+import styles from "./total-card.module.css";
 import { PackageOpen } from "lucide-react";
 import Icon from "../icon/icon";
-import styles from "./total-card.module.css";
 import Container from "../container/container";
 
 export default function TotalCard() {

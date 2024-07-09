@@ -1,16 +1,10 @@
-import {
-  Facebook,
-  Instagram,
-  SendHorizonal,
-  Twitter,
-  Youtube,
-} from "lucide-react";
+import styles from "./footer.module.css";
+import { Facebook, Instagram, SendHorizonal, Twitter } from "lucide-react";
+import Link from "next/link";
 import Container from "../container/container";
 import Headers from "../headers/headers";
 import InputButton from "../input-with-button/input-with-button";
-import styles from "./footer.module.css";
 import Icon from "../icon/icon";
-import Link from "next/link";
 import FooterLinkGroup from "./footer-link-group/footer-link-group";
 import Text from "../text/text";
 

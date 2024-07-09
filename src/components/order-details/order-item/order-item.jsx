@@ -1,5 +1,5 @@
-import Image from "next/image";
 import styles from "./order-item.module.css";
+import Image from "next/image";
 import DataCell from "@/components/data-cell/data-cell";
 import demo from "@/assets/product.png";
 

@@ -1,5 +1,5 @@
-import Headers from "@/components/headers/headers";
 import styles from "./order-total.module.css";
+import Headers from "@/components/headers/headers";
 import Container from "@/components/container/container";
 import DataCell from "@/components/data-cell/data-cell";
 
