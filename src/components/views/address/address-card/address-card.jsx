@@ -5,13 +5,22 @@ import DataCell from "@/components/data-cell/data-cell";
 import Button from "@/components/button/button";
 import Container from "@/components/container/container";
 import EditAddressModal from "@/components/modals/edit-address-modal/edit-address-modal";
+import RemoveAddressModal from "@/components/modals/remove-address-modal/remove-address-modal";
 
 function AddressCard() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+  const [isRemoveModalOpen, setIsRemoveModalOpen] = useState(false);
 
   return (
     <>
-      <EditAddressModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
+      <EditAddressModal
+        isOpen={isEditModalOpen}
+        onClose={() => setIsEditModalOpen(false)}
+      />
+      <RemoveAddressModal
+        isOpen={isRemoveModalOpen}
+        onClose={() => setIsRemoveModalOpen(false)}
+      />
       <address className={styles.address_card}>
         <Container>
           <h6 className={styles.username}>Jenny Swanson</h6>
@@ -24,8 +33,12 @@ function AddressCard() {
             <DataCell dataName="phone number" dataValue="+880-1873-228724" />
           </div>
           <div className={styles.btns}>
-            <Button label="edit" onClick={() => setIsOpen(true)} />
-            <Button label="remove" variant="destructive" />
+            <Button label="edit" onClick={() => setIsEditModalOpen(true)} />
+            <Button
+              label="remove"
+              variant="destructive"
+              onClick={() => setIsRemoveModalOpen(true)}
+            />
           </div>
         </Container>
       </address>

@@ -1,0 +1,6 @@
+.buttons {
+  margin-top: calc(var(--margin) * 2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
