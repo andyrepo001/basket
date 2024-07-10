@@ -1,11 +1,12 @@
 .input_wrapper {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   gap: var(--gap);
 }
 
 .input {
-  padding: calc(var(--padding) * 0.8) var(--padding);
+  padding: calc(var(--padding) * 1.2) var(--padding);
   border: 1px solid var(--theme-variant);
   border-radius: var(--radius);
   outline: none;
@@ -32,6 +33,7 @@
 
 .no_border {
   border-color: transparent;
+  border-radius: 0;
 }
 
 .no_border:focus {

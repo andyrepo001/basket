@@ -17,7 +17,7 @@ export default function InputButton({
         required
         ariaLabel={inputAriaLabel}
         type={inputType}
-        borderStyle="none"
+        customRadius="var(--radius) 0 0 var(--radius)"
       />
       <Button
         label={buttonLabel}
@@ -25,6 +25,7 @@ export default function InputButton({
         icon={buttonIcon}
         type="submit"
         variant="secondary"
+        borderStyle="square"
       />
     </form>
   );

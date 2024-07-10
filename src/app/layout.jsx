@@ -1,6 +1,8 @@
-import Footer from "@/components/footer/footer";
 import "./globals.css";
-import { rubik } from "@/lib/fonts";
+import { poppins } from "@/lib/fonts";
+import Navbar from "@/components/navbar/navbar";
+import Footer from "@/components/footer/footer";
+import MobileNav from "@/components/navbar/mobile-nav/mobile-nav";
 
 export const metadata = {
   title: "Borobasket",
@@ -10,9 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={rubik.className}>
+      <body className={poppins.className}>
+        <Navbar />
         {children}
         <Footer />
+        <MobileNav />
       </body>
     </html>
   );

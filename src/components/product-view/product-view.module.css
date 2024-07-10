@@ -1,0 +1,11 @@
+.product_view {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(var(--gap) * 2);
+}
+
+@media (min-width: 768px) {
+  .product_view {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+}

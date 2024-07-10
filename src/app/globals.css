@@ -1,5 +1,6 @@
 :root {
-  --max-width: 1500px;
+  --max-width: 1900px;
+  --navbar-height: 80px;
 
   --destructive: #d50000;
   --background: #ffffff;
@@ -64,7 +65,7 @@ li {
   line-height: auto;
   border: 1px solid transparent;
   border-radius: var(--radius);
-  padding: calc(var(--padding) * 0.8) var(--padding);
+  padding: calc(var(--padding) * 1.2);
   text-transform: capitalize;
   outline: none;
   font-size: var(--font);

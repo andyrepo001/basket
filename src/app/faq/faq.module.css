@@ -25,6 +25,6 @@
 
   .header_wrapper {
     position: sticky;
-    top: 0;
+    top: calc(var(--navbar-height) + var(--gap));
   }
 }

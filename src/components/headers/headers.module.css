@@ -14,7 +14,7 @@
 }
 
 .light {
-  font-weight: var(--font-light);
+  font-weight: var(--font-light) !important;
 }
 
 .secondaryHeader {

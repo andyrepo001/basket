@@ -5,6 +5,7 @@ export default function Headers({
   secondaryHeader,
   customStyles = {},
   light,
+  secondaryLight,
   capitalize = true,
 }) {
   return (
@@ -19,7 +20,13 @@ export default function Headers({
         </h2>
       )}
       {secondaryHeader && (
-        <h4 className={styles.secondaryHeader}>{secondaryHeader}</h4>
+        <h4
+          className={`${styles.secondaryHeader} ${
+            secondaryLight ? styles.light : ""
+          }`}
+        >
+          {secondaryHeader}
+        </h4>
       )}
     </hgroup>
   );

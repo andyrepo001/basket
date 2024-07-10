@@ -1,5 +1,5 @@
 import styles from "./input.module.css";
-import { rubik } from "@/lib/fonts";
+import { poppins } from "@/lib/fonts";
 
 export default function Input({
   ariaLabel,
@@ -61,7 +61,7 @@ export default function Input({
           type={type}
           placeholder={placeholder}
           required={required}
-          className={`${styles.input} ${variants.borderType[borderStyle]} ${rubik.className}`}
+          className={`${styles.input} ${variants.borderType[borderStyle]} ${poppins.className}`}
           rows="5"
         ></textarea>
       )}

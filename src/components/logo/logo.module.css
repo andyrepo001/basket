@@ -1,0 +1,10 @@
+.logo_wrapper {
+  position: relative;
+  width: 150px;
+  height: 50px;
+}
+
+.logo {
+  object-fit: contain;
+  width: fit-content !important;
+}

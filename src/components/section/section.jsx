@@ -4,6 +4,7 @@ import Headers from "../headers/headers";
 export default function Section({
   children,
   sectionTitle,
+  sectionSecondaryTitle,
   customStyles,
   customMargin,
 }) {
@@ -15,7 +16,11 @@ export default function Section({
     >
       {sectionTitle && (
         <div className={styles.section_title}>
-          <Headers primaryHeader={sectionTitle} />
+          <Headers
+            primaryHeader={sectionTitle}
+            secondaryHeader={sectionSecondaryTitle}
+            secondaryLight
+          />
         </div>
       )}
       <div style={customStyles}>{children}</div>
