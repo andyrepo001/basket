@@ -3,5 +3,5 @@
 }
 
 .section_title {
-  margin-bottom: calc(var(--margin) * 3);
+  margin-bottom: var(--margin);
 }

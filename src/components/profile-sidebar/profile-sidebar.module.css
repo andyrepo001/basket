@@ -80,7 +80,8 @@
 
 @media (min-width: 768px) {
   .profile_sidebar {
-    width: 350px;
+    min-width: var(--sidebar-width);
+    width: var(--sidebar-width);
   }
 }
 

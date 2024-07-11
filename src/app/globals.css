@@ -1,6 +1,7 @@
 :root {
   --max-width: 1900px;
   --navbar-height: 80px;
+  --sidebar-width: 300px;
 
   --destructive: #d50000;
   --background: #ffffff;
@@ -74,4 +75,10 @@ li {
   user-select: none;
   transition: color var(--transition), background-color var(--transition),
     box-shadow var(--transition), border var(--transition);
+}
+
+@media (min-width: 1024px) {
+  .category {
+    display: none;
+  }
 }

@@ -75,30 +75,26 @@ export default function Page() {
             </div>
           </div>
         </Section>
+
         {/* Features */}
-        <Section
-          customStyles={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <Section>
           <Container>
             <div className={styles.features}>
-              <Headers
-                primaryHeader="why you'll love us"
-                customStyles={{ marginBottom: "1rem" }}
-              />
-              <Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Tenetur, optio, iusto magni fuga officia nam doloremque quidem
-                odio saepe voluptatibus hic aliquam. Natus vel ab, nesciunt
-                adipisci repudiandae, dolores quas eligendi dolore deleniti id
-                similique aliquam cumque nisi maiores? Ut sit iste voluptatibus
-                quos aliquid aperiam nesciunt vitae commodi facere sint
-                laboriosam molestiae rem maxime nemo eum ad quasi.
-              </Text>
+              <div className={styles.features_wrapper}>
+                <Headers
+                  primaryHeader="why you'll love us"
+                  customStyles={{ marginBottom: "1rem" }}
+                />
+                <Text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur, optio, iusto magni fuga officia nam doloremque quidem
+                  odio saepe voluptatibus hic aliquam. Natus vel ab, nesciunt
+                  adipisci repudiandae, dolores quas eligendi dolore deleniti id
+                  similique aliquam cumque nisi maiores? Ut sit iste
+                  voluptatibus quos aliquid aperiam nesciunt vitae commodi
+                  facere sint laboriosam molestiae rem maxime nemo eum ad quasi.
+                </Text>
+              </div>
             </div>
           </Container>
           <div className={styles.feature_cards}>

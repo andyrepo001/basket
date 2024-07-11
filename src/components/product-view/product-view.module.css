@@ -6,6 +6,6 @@
 
 @media (min-width: 768px) {
   .product_view {
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }

@@ -12,7 +12,6 @@
 }
 
 .data_key {
-  margin-bottom: calc(var(--margin) * 0.5);
   opacity: 0.7;
 }
 

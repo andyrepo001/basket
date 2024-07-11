@@ -3,6 +3,7 @@ import { poppins } from "@/lib/fonts";
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
 import MobileNav from "@/components/navbar/mobile-nav/mobile-nav";
+import CategorySidebar from "@/components/category-sidebar/category-sidebar";
 
 export const metadata = {
   title: "Borobasket",
@@ -17,6 +18,9 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <MobileNav />
+        <div className="category">
+          <CategorySidebar />
+        </div>
       </body>
     </html>
   );

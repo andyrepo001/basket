@@ -23,6 +23,17 @@ export default function Home() {
               ))}
             </ProductView>
           </Section>
+
+          <Section
+            sectionTitle="food cupboard"
+            sectionSecondaryTitle="A virtual assistant collects the products from your list"
+          >
+            <ProductView>
+              {products?.map((pr, ind) => (
+                <ProductCard key={ind} product={pr} />
+              ))}
+            </ProductView>
+          </Section>
         </div>
       </Container>
     </main>
