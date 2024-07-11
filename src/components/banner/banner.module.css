@@ -1,0 +1,32 @@
+.banner_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+}
+
+.banner_image_wrapper {
+  position: relative;
+  height: 200px;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.banner_image {
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .banner_container {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner_image_wrapper {
+    height: 300px;
+  }
+
+  .banner_container {
+    grid-template-columns: 2fr 1fr;
+  }
+}

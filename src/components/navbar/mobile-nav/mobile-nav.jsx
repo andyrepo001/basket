@@ -1,13 +1,14 @@
 "use client";
-import Logo from "@/components/logo/logo";
 import styles from "./mobile-nav.module.css";
 import Container from "@/components/container/container";
 import Button from "@/components/button/button";
-import { Heart, Home, Menu, Search, ShoppingCart } from "lucide-react";
+import { Home, Menu, Search, ShoppingCart, User } from "lucide-react";
 import { useCategorySidebar } from "@/hooks/use-category-sidebar";
 import { useRouter } from "next/navigation";
+import { useSearchModal } from "@/hooks/use-search-modal";
 
 export default function MobileNav() {
+  const searchModal = useSearchModal();
   const categorySidebar = useCategorySidebar();
   const router = useRouter();
 
@@ -20,9 +21,9 @@ export default function MobileNav() {
       <Container>
         <div className={styles.nav_items}>
           <Button icon={Menu} onClick={handleCategorySidebarOpen} />
-          <Button icon={Search} />
+          <Button icon={Search} onClick={searchModal.onOpen} />
           <Button icon={Home} onClick={() => router.push("/")} />
-          <Button icon={Heart} onClick={() => router.push("/user/wishlist")} />
+          <Button icon={User} onClick={() => router.push("/user/profile")} />
           <Button icon={ShoppingCart} />
         </div>
       </Container>

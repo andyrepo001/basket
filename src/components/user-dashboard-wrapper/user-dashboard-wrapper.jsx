@@ -11,8 +11,6 @@ export default function UserDashboardWrapper({
       customStyles={{
         ...customStyles,
         borderRadius: "var(--radius)",
-        backgroundColor: "var(--background)",
-        padding: "var(--padding)",
       }}
       sectionTitle={title}
     >

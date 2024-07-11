@@ -5,6 +5,7 @@ import ProductCard from "@/components/product-card/product-card";
 import ProductView from "@/components/product-view/product-view";
 import { products } from "@/lib/static";
 import Section from "@/components/section/section";
+import Banner from "@/components/banner/banner";
 
 export default function Home() {
   return (
@@ -12,10 +13,10 @@ export default function Home() {
       <CategorySidebar />
       <Container>
         <div className={styles.home}>
+          <Banner />
           <Section
             sectionTitle="food cupboard"
             sectionSecondaryTitle="A virtual assistant collects the products from your list"
-            customMargin={0}
           >
             <ProductView>
               {products?.map((pr, ind) => (

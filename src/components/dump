@@ -1,0 +1,53 @@
+import { validationResult } from 'express-validator';
+
+export async function POST(req) {
+  try {
+    const { userId } = await verifyToken(req);
+    if (!userId) {
+      return NextResponse.json({ msg: "Unauthorized." }, { status: 401 });
+    }
+
+    const user = await User.findById(userId);
+    if (!user) {
+      return NextResponse.json({ msg: "Unauthorized." }, { status: 401 });
+    }
+
+    if (!user.isAdmin) {
+      return NextResponse.json({ msg: "Unauthorized." }, { status: 401 });
+    }
+
+    // Validate input using express-validator or similar
+
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return NextResponse.json({ errors: errors.array() }, { status: 400 });
+    }
+
+    const agenda = await req.json();
+    const comment = {
+      comment: agenda.comment,
+      commentedBy: user._id,
+    };
+
+    const project = await Project.findById(user.projects[0]);
+    if (!project) {
+      return NextResponse.json({ msg: "Project not found." }, { status: 404 });
+    }
+
+    const newAgenda = new Task({
+      ...agenda,
+      assignedBy: user._id,
+      comments: [comment],
+      project: user.projects[0],
+    });
+
+    await newAgenda.save();
+
+    // Using $push for atomic update
+    await Project.findByIdAndUpdate(project._id, { $push: { tasks: newAgenda._id } });
+
+    return NextResponse.json({ msg: "Task added successfully." }, { status: 200 });
+  } catch (err) {
+    return NextResponse.json({ msg: err.message }, { status: err.status || 500 });
+  }
+}

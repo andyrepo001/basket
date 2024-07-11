@@ -32,9 +32,9 @@ export default function ProfilePage({ params }) {
           <Button label="show menu" variant="secondary" />
         </ProfileSiebarTrigger>
         <div className={styles.content}>
-          <Container>
+          <div className={styles.content_main}>
             <CurrentView />
-          </Container>
+          </div>
         </div>
       </div>
     </PageWrapper>
